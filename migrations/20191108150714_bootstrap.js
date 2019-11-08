@@ -10,8 +10,7 @@ exports.up = function(knex) {
         tbl.string('proj_date');
         tbl
         .boolean('finished')
-        .notNullable()
-        .defaultTo(0);
+        .defaultTo(false);
     })
 
     .createTable('task', tbl => {
@@ -21,8 +20,7 @@ exports.up = function(knex) {
         tbl.string('task_notes');
         tbl
         .boolean('finished')
-        .notNullable()
-        .defaultTo(0);
+        .defaultTo(false);
 
         tbl
         .integer('project_id')

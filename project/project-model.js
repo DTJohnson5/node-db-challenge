@@ -21,21 +21,21 @@ function add(newProject) {
 }
 
 function getTasks(id) {
-  return db("project")
-    .innerJoin("task", "task.project_id", "projects.id")
-    .select(
-      "project.proj_name",
-      "project.proj_desc",
-      "task.task_desc",
-      "task.task_notes",
-      // "task.completed",
-      "task.project_id"
-    )
-    .where({ project_id: id });
+  return db('project')
+  .innerJoin('task', 'task.project_id', 'project.id')
+  .select(
+    "project.proj_name",
+    "project.proj_desc",
+    "project.finished",
+    "task.task_desc",
+    "task.task_notes",
+    "task.finished"
+  )
+  .where({project_id: id});
 }
 
 function addTask(id, task) {
-  return db("tasks")
+  return db("task")
     .where({ project_id: id })
     .insert(task);
-} 
+}
