@@ -16,19 +16,19 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [X] Create a forked copy of this project.
+- [X] Add your _Team Lead_ as collaborator on Github.
+- [X] Clone your forked version of the Repository.
+- [X] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [X] Implement the project on this Branch, committing changes regularly.
+- [X] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
-- [ ] Please don't merge your own pull request.
-- [ ] Add your _Team Lead_ as a Reviewer on the Pull-request
-- [ ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
+- [X] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
+- [X] Please don't merge your own pull request.
+- [X] Add your _Team Lead_ as a Reviewer on the Pull-request
+- [X] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
 
 ## Commits
 
@@ -38,13 +38,21 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [X] Explain the difference between `Relational Databases` and `SQL`.
 
-- [ ] Why do tables need a `primary key`?
+Relational databases are the collection of organized data that represents some information and SQL is used to manage it.
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+- [X] Why do tables need a `primary key`?
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+To ensure that a record has a unique identifier and can be quickly referenced.
+
+- [X] What is the name given to a table column that references the primary key on another table.
+
+Foreign key.
+
+- [X] What do we need in order to have a _many to many_ relationship between two tables.
+
+An intermediary table.
 
 ## Minimum Viable Product
 
@@ -52,15 +60,15 @@ Take the steps necessary to complete the project from scratch. Start by initiali
 
 Complete the following tasks:
 
-- [ ] Design the data model and use _knex migrations_ to create the database and tables.
-- [ ] Build an API with endpoints for:
-  - [ ] adding resources.
-  - [ ] retrieving a list of resources.
-  - [ ] adding projects.
-  - [ ] retrieving a list of projects.
-  - [ ] adding tasks.
-  - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
-- [ ] When returning `project` or `task` information, the `completed` property should be `true` or `false`.
+- [X] Design the data model and use _knex migrations_ to create the database and tables.
+- [X] Build an API with endpoints for:
+  - [X] adding resources.
+  - [X] retrieving a list of resources.
+  - [X] adding projects.
+  - [X] retrieving a list of projects.
+  - [X] adding tasks.
+  - [X] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
+- [X] When returning `project` or `task` information, the `completed` property should be `true` or `false`.
 
 For example, instead of returning a `task` that looks like this:
 
